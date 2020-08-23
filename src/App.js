@@ -10,6 +10,8 @@ import './style.css'
 import { LikeFilled, DislikeFilled, HeartFilled, SmileFilled } from '@ant-design/icons'
 import Emotion from './Emotion'
 
+const WS_URL = 'https://realtalk88.herokuapp.com/'
+
 let socket
 document.title = 'RealTalk'
 export default function App() {
@@ -37,7 +39,7 @@ export default function App() {
 
 
   useEffect(() => {
-    socket = io('http://localhost:3001')
+    socket = io(WS_URL)
 
     navigator.mediaDevices.getUserMedia({ video: true, audio: false }).then(stream => {
       setStream(stream)
