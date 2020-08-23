@@ -8,7 +8,7 @@ export default function Emotion({ icon, setIcon, blocked }) {
   } 
   else if (icon) {
     const EmotionIcon = Icon[icon]
-    setTimeout(() => {setIcon(undefined)}, 2000)
+    setTimeout(() => {setIcon(undefined)}, 1000)
     return (
       <div className='like'>
         <EmotionIcon />

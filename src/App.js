@@ -9,7 +9,9 @@ import './style.css'
 
 import { LikeFilled, DislikeFilled, HeartFilled, SmileFilled } from '@ant-design/icons'
 import Emotion from './Emotion'
+
 let socket
+document.title = 'RealTalk'
 export default function App() {
   const [stream, setStream] = useState()
   const [myId, setMyId] = useState()

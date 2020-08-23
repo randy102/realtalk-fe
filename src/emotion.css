@@ -1,7 +1,7 @@
 .like span {
   font-size: 150px;
   color: #4cd6ff;
-  animation: shake 2s;
+  animation: shake 1s;
 }
 
 .like {
